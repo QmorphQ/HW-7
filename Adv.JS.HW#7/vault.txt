@@ -1,0 +1,20 @@
+//-----------------
+// get_jsonDATA(method.get, url_users).then((v) => console.log(v))
+// get_jsonDATA(method.get, url_2).then((v) => console.log(v))
+// //================================================================================================//
+
+// //--------------
+// //Get Users list:
+// get_jsonDATA(method.get, url_users)
+// .then((e) => users = e.sort((a, b) => a["id"] - b["id"]).map((a) => create_obj (a, "name", "email", "id") ))
+// .then((e) => console.log(e));
+
+
+
+// //----------
+// //Get posts:
+// get_jsonDATA(method.get, url_2)
+// .then((e) => posts = e.map((a) => create_obj (a, "title", "body", "userId", "id")))
+// .then((e) => e.map((user_post) => new Post(user_post, users)))
+// .then((e) => e.forEach((post) => post.create_card("main")) )
+// .then((e) => e)
